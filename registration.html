@@ -1,0 +1,65 @@
+<!-- Name: Quoc Phong Tran
+Course: CST8285
+Lab section: 321
+Professor: Hala Own
+File: registration.html
+Date Created: November 08, 2024
+Description: This HTML document provides a registration form for a "Weekly Kitten Pictures Subscription" service. The form includes fields for email, username, password, and password confirmation, along with checkboxes for newsletter subscription and agreement to terms and conditions. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Quoc Phong Tran" />
+    <link rel="stylesheet" href="weeklykitten.css" />
+    <script src="script.js" defer></script>
+    <title>Lab 5 - JavaScript 1</title>
+  </head>
+  <body>
+    <div class="formcontainer">
+      <h1>Weekly Kitten Pictures Subsription</h1>
+      <hr />
+      <form
+        action="registration.html"
+        method="get"
+        onsubmit="return validate();"
+      >
+        <div class="textfield">
+          <label for="email">Email Address</label>
+          <input type="text" name="email" id="email" placeholder="Email" />
+        </div>
+
+        <div class="textfield">
+          <label for="login">User Name</label>
+          <input type="text" name="login" id="login" placeholder="User name" />
+        </div>
+
+        <div class="textfield">
+          <label for="pass">Password</label>
+          <input type="password" name="pass" id="pass" placeholder="Password" />
+        </div>
+
+        <div class="textfield">
+          <label for="pass2">Re-type Password</label>
+          <input type="password" id="pass2" placeholder="Password" />
+        </div>
+
+        <div class="checkbox">
+          <input type="checkbox" name="newsletter" id="newsletter" />
+          <label for="newsletter"
+            >I agree to receive Weekly Kitten Pictures newsletters</label
+          >
+        </div>
+
+        <div class="checkbox">
+          <input type="checkbox" name="terms" id="terms" />
+          <label for="terms">I agree to the terms and conditions</label>
+        </div>
+
+        <button type="submit" class="sign-up">Sign-Up</button>
+        <button type="reset" class="reset">Reset</button>
+      </form>
+    </div>
+  </body>
+</html>

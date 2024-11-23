@@ -1,0 +1,63 @@
+/* Name: Quoc Phong Tran
+Course: CST8285
+Lab section: 321
+Professor: Hala Own
+File: weeklykitten.css
+Date Created: November 08, 2024
+Description: CSS styling for a subscription form, including layout, input styles, button designs, and error highlights. */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 20px 60px;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.textfield {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+h1,
+hr {
+  margin: 20px 0;
+  font-size: 3em;
+}
+input {
+  padding: 5px;
+}
+.warning {
+  color: red;
+  margin-bottom: 3px;
+  font-size: 14px;
+}
+
+.sign-up {
+  background-color: blue;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  border: 0;
+}
+.reset {
+  background-color: red;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  border: 0;
+}
+.error-input-highlight {
+  border: 2px solid red;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox p {
+  padding-left: 15px;
+}
